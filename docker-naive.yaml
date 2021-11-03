@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+
+  naiveproxy:
+    container_name: naiveproxy
+    image: pocat/naiveproxy
+    restart: on-failure
+    network_mode: host
+    volumes:
+      - /etc/naiveproxy:/etc/naiveproxy:rw
+      - /var/www/html:/var/www/html:rw
+      - /var/log/caddy:/var/log/caddy:rw
+    environment:
+      - PATH=/etc/naiveproxy/Caddyfile
+    cap_drop:
+      - ALL
+    cap_add:
+      - CHOWN
+      - NET_BIND_SERVICE
+      - DAC_OVERRIDE

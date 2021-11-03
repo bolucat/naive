@@ -1,0 +1,7 @@
+<service>
+  <id>naiveproxy</id>
+  <name>Naiveproxy</name>
+  <description>Make a fortune quietly</description>
+  <executable>naive.bat</executable>
+  <log mode="reset"></log>
+</service>

@@ -1,0 +1,4 @@
+{
+    "listen": "socks://127.0.0.1:10800",
+    "proxy": "https://user_name:your_password@your_domain.com"
+}
