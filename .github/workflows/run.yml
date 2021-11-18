@@ -17,7 +17,7 @@ jobs:
 
         - name: Set variables
           run: |
-            echo "VERSION=v95.0.4638.54-3" >> $GITHUB_ENV
+            echo "VERSION=v96.0.4664.45-1" >> $GITHUB_ENV
             echo "TAGS=$(wget -qO- https://api.github.com/repos/bolucat/peace/tags | grep 'name' | cut -d\" -f4 | head -1)" >> $GITHUB_ENV
           shell: bash
 
