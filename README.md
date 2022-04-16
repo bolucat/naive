@@ -86,15 +86,19 @@ systemctl stop naiveproxy
 ```
 
 ## Windows Users
-AKA, Qv2ray has been deprected due to its [internal issues](https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0), so we need to use another client sooner or later
+Since v2rayN release its [5.16](https://github.com/2dust/v2rayN/releases/tag/5.16) preview version, Naiveproxy has been supported natively, please switch to [v2rayN](https://github.com/2dust/v2rayN) to use Naiveproxy further 🎉🎉🎉
 
-Directly use [Naiveproxy Core](https://github.com/klzgrad/naiveproxy/releases) is advisable, collaborate with [V2rayN](https://github.com/2dust/v2rayN) or [Clash For Windows](https://github.com/Fndroid/clash_for_windows_pkg), you can proxy for all windows traffic
+For this project, I will only maintain the server side part (Linux Based) 
 
-- Clone this Repository
+~~AKA, Qv2ray has been deprected due to its [internal issues](https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0), so we need to use another client sooner or later~~
+
+~~Directly use [Naiveproxy Core](https://github.com/klzgrad/naiveproxy/releases) is advisable, collaborate with [V2rayN](https://github.com/2dust/v2rayN) or [Clash For Windows](https://github.com/Fndroid/clash_for_windows_pkg), you can proxy for all windows traffic~~
+
+~~- Clone this Repository~~
 ```bash
 git clone https://github.com/bolucat/naive Naiveproxy
 ```
-- Go to `Naiveproxy\windows` directory, and modify `config.json`
+~~- Go to `Naiveproxy\windows` directory, and modify `config.json`~~
 ```bash
 {
     "listen": "socks://127.0.0.1:10800",
@@ -102,15 +106,15 @@ git clone https://github.com/bolucat/naive Naiveproxy
 }
 ```
 
-Modify `user_name` to your user name, `your_password` to your password, `your_domain.com` to your domain. 
+~~Modify `user_name` to your user name, `your_password` to your password, `your_domain.com` to your domain.~~
 
-**Do Not** delete `:` or `@`
+~~**Do Not** delete `:` or `@`~~
 
-- Config `V2rayN` or `Clash For Windows`
+~~- Config `V2rayN` or `Clash For Windows`~~
 
-For instance, set a **socks5** protocol with `V2rayN` listen on `127.0.0.1:10800`
+~~For instance, set a **socks5** protocol with `V2rayN` listen on `127.0.0.1:10800`~~
 
-Or add this configuration to `Clash For Windows` to listen on `127.0.0.1:10800`
+~~Or add this configuration to `Clash For Windows` to listen on `127.0.0.1:10800`~~
 
 ```yaml
 # Start from section "proxies"
@@ -123,10 +127,10 @@ proxies:
     udp: true
 ```
 
-- Start with Windows  
+~~- Start with Windows~~
 
-Double Click `start.bat` and press `YES` when asking for **Root** Permission
+~~Double Click `start.bat` and press `YES` when asking for **Root** Permission~~
 
-- Stop with Windows   
+~~- Stop with Windows~~ 
 
-Double Click `stop.bat` and press `YES` when asking for **Root** Permission
+~~Double Click `stop.bat` and press `YES` when asking for **Root** Permission~~
