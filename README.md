@@ -86,51 +86,92 @@ systemctl stop naiveproxy
 ```
 
 ## Windows Users
-Since v2rayN release its [5.16](https://github.com/2dust/v2rayN/releases/tag/5.16) preview version, Naiveproxy has been supported natively, please switch to [v2rayN](https://github.com/2dust/v2rayN) to use Naiveproxy further 🎉🎉🎉
+Since v2rayN release its [5.16](https://github.com/2dust/v2rayN/releases/tag/5.16) version, Naiveproxy has been supported natively, please switch to [v2rayN](https://github.com/2dust/v2rayN) to use Naiveproxy further 🎉🎉🎉
 
 For this project, I will only maintain the server side part (Linux Based) 
 
-~~AKA, Qv2ray has been deprected due to its [internal issues](https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0), so we need to use another client sooner or later~~
+### v2rayN usage explain
+- download pre-build binaries from official repository  
+v2rayN : https://github.com/2dust/v2rayN/releases  
 
-~~Directly use [Naiveproxy Core](https://github.com/klzgrad/naiveproxy/releases) is advisable, collaborate with [V2rayN](https://github.com/2dust/v2rayN) or [Clash For Windows](https://github.com/Fndroid/clash_for_windows_pkg), you can proxy for all windows traffic~~
+![v2rayN](./pics/1.png)
 
-~~- Clone this Repository~~
-```bash
-git clone https://github.com/bolucat/naive Naiveproxy
-```
-~~- Go to `Naiveproxy\windows` directory, and modify `config.json`~~
-```bash
+naiveproxy : https://github.com/klzgrad/naiveproxy/releases 
+
+![naiveproxy](./pics/2.png)
+
+- extract binaries from zip archive
+
+![extract](./pics/3.png)
+
+- enter into **naiveproxy-v100.0.4896.60-1-win-x64** folder, and rename **config.json** to **naive.config**
+
+![rename](./pics/4.png)
+
+- edit **naive.config**, the sample configuration showed below
+```json
 {
-    "listen": "socks://127.0.0.1:10800",
-    "proxy": "https://user_name:your_password@your_domain.com"
+  "listen": "http://127.0.0.1:10809",
+  "proxy": "https://user_name:password@your_domain.com",
+  "log": "naive-log.txt"
 }
 ```
 
-~~Modify `user_name` to your user name, `your_password` to your password, `your_domain.com` to your domain.~~
+*If you want to change listen port from **10809** to your specific port, please read **Tips** at the end of this article* 
 
-~~**Do Not** delete `:` or `@`~~
+- move **naive.exe** and **naive.json** to folder **v2rayN-Core**, make sure **naive.exe** and **naive.json** are both located with **v2rayN.exe** in the same folder
 
-~~- Config `V2rayN` or `Clash For Windows`~~
+![move-naive](./pics/5.png)
 
-~~For instance, set a **socks5** protocol with `V2rayN` listen on `127.0.0.1:10800`~~
+- open v2rayN, click **Servers** option and click **Add a custom configuration server**
 
-~~Or add this configuration to `Clash For Windows` to listen on `127.0.0.1:10800`~~
+![open-v2rayN](./pics/6.png)
 
-```yaml
-# Start from section "proxies"
+- input **Alias** (it's totally up to you), and click **Browse** under Address
 
-proxies:
-  - name: "naiveproxy"
-    type: socks5
-    server: 127.0.0.1
-    port: 10800
-    udp: true
+![browse](./pics/7.png)
+
+- select **naive.json** in your **v2rayN-Core** folder
+
+![select](./pics/8.png)
+
+- and a successful pop-up will prompt here
+
+![pop-up](./pics/9.png)
+
+- then, choose **naiveproxy** at **Core Type** field, and click **OK** to finish setup
+
+![finish](./pics/10.png)
+
+- you should open v2rayN **Set system proxy** setting by right-clicking the v2rayN logo at Windows Taskbar and toggle it
+
+![set-system-proxy](./pics/11.png)
+
+- enjoy it!
+
+### Tips : change listen port
+for example, if you want to change your port from **10809** to **20000**, you should modify two areas
+- modify **naive.json** in **v2rayN-Core** folder like this:
+```json
+{
+  "listen": "http://127.0.0.1:20000",
+  "proxy": "https://user_name:password@your_domain.com",
+  "log": "naive-log.txt"
+}
 ```
+- modify v2rayN setting   
+open **Settings --> OptionSetting**
 
-~~- Start with Windows~~
+![open-setting](./pics/12.png)
 
-~~Double Click `start.bat` and press `YES` when asking for **Root** Permission~~
+change **Listening port** to **19999** (Please Note That This Port Should Be Set to **Your Port** - 1 )
 
-~~- Stop with Windows~~ 
+![change-port](./pics/13.png)
 
-~~Double Click `stop.bat` and press `YES` when asking for **Root** Permission~~
+after confirm, please make sure the **http port** displayed at the lower left corner is **20000**
+
+![check](./pics/14.png)
+
+- and finally, Do Not Forget to refresh your configuration by **Browse** your **naive.json** and reconfirm again
+
+- enjoy
