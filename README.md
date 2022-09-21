@@ -1,3 +1,5 @@
+## Notes
+From [Caddy v2.6.0](https://github.com/caddyserver/caddy/releases/tag/v2.6.0), The `experimental_http3` option has been deprecated, please update your configuration
 ## Preparation
 **You need to install `wget` , and `git` previously**
 
@@ -32,9 +34,7 @@ cat > /etc/naiveproxy/Caddyfile <<EOF
       level INFO
   }
   servers :443 {
-      protocol {
-          experimental_http3
-      }
+      protocols h1 h2 h3
   }
 }
 
