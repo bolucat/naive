@@ -1,11 +1,13 @@
 ## Notes
 From [Caddy v2.6.0](https://github.com/caddyserver/caddy/releases/tag/v2.6.0), The `experimental_http3` option has been deprecated, please update your configuration
 ## Preparation
-**You need to install `wget` , and `git` previously**
+**You need to install `wget` and `git` at first**
 
 For **Ubuntu / Debian** : `apt install -y wget git`    
 
 For **CentOS / Rocky** : `yum install -y wget git`
+
+**Note : Please Avoid using stale Linux distribution (Like CentOS 7, Debian 9, Ubuntu 18.04 or even lower), this will lead to some unexpected errors. Recommended System : `Debian 10 / 11` `Ubuntu 20.04 / 22.04` `Rocky Linux 8 / 9`**
 - Install Docker
 ```bash
 wget -qO- get.docker.com | bash
