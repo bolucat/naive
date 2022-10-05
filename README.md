@@ -104,11 +104,11 @@ naiveproxy : https://github.com/klzgrad/naiveproxy/releases
 
 ![extract](./pics/3.png)
 
-- enter into **naiveproxy-v100.0.4896.60-1-win-x64** folder, and rename **config.json** to **naive.config**
+- enter into **naiveproxy-v100.0.4896.60-1-win-x64** folder, and rename **config.json** to **naive.json**
 
 ![rename](./pics/4.png)
 
-- edit **naive.config**, the sample configuration showed below
+- edit **naive.json**, the sample configuration showed below
 ```json
 {
   "listen": "http://127.0.0.1:10809",
