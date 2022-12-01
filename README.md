@@ -94,6 +94,7 @@ systemctl stop naiveproxy
 | V2rayN | Windows | https/quic | Maintained | [Link](https://github.com/2dust/v2rayN) |
 | SagerNet | Android | https/quic | Maintained | [Client](https://github.com/SagerNet/SagerNet) && [Naive Plugin](https://github.com/SagerNet/SagerNet/releases/tag/naive-plugin-107.0.5304.87-1) |
 | Matsuri | Android | https/quic | Maintained | [Client](https://github.com/MatsuriDayo/Matsuri) && [Naive Plugin](https://github.com/SagerNet/SagerNet/releases/tag/naive-plugin-107.0.5304.87-1) |
+| AndrProxy | Android | https/quic | Maintained | [Link](https://github.com/Jidoer/AndrProxy) |
 | Shadowrocket | iOS | https | Maintained | [Link](https://apps.apple.com/us/app/shadowrocket/id932747118) |
 
 ## v2rayN Users
