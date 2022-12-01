@@ -5,7 +5,6 @@ After=docker.service
 
 [Service]
 Restart=always
-
 ExecStart=bash -c "/etc/naiveproxy/start.sh"
 ExecStop=bash -c "/etc/naiveproxy/stop.sh"
 
