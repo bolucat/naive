@@ -1,0 +1,12 @@
+[Unit]
+Description=naiveproxy
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=bash -c "/etc/naiveproxy/start.sh"
+ExecStop=bash -c "/etc/naiveproxy/stop.sh"
+
+[Install]
+WantedBy=multi-user.target
