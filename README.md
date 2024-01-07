@@ -92,11 +92,11 @@ systemctl stop naiveproxy
 | Qv2ray | Windows/MacOS/Linux | https/quic | Inactive | [Client](https://github.com/Qv2ray/Qv2ray) & [Naive Plugin](https://github.com/Qv2ray/QvPlugin-NaiveProxy) |
 | Nekoray | Windows/MacOS/Linux | https/quic | Maintained | [Link](https://github.com/MatsuriDayo/nekoray) |
 | V2rayN | Windows | https/quic | Maintained | [Link](https://github.com/2dust/v2rayN) |
-| SagerNet | Android | https/quic | Maintained | [Client](https://github.com/SagerNet/SagerNet) & [Naive Plugin](https://github.com/SagerNet/SagerNet/releases/tag/naive-plugin-111.0.5563.64-1) |
-| Matsuri | Android | https/quic | Maintained | [Client](https://github.com/MatsuriDayo/Matsuri) & [Naive Plugin](https://github.com/SagerNet/SagerNet/releases/tag/naive-plugin-111.0.5563.64-1) |
-| NekoBoxForAndroid | Android | https/quic | Maintained | [Client](https://github.com/MatsuriDayo/NekoBoxForAndroid) & [Naive Plugin](https://github.com/SagerNet/SagerNet/releases/tag/naive-plugin-111.0.5563.64-1) |
+| SagerNet | Android | https/quic | Inactive | [Client](https://github.com/SagerNet/SagerNet) & [Naive Plugin](https://github.com/bolucat/SagerNet/releases?q=naive) |
+| Matsuri | Android | https/quic | Inactive | [Client](https://github.com/MatsuriDayo/Matsuri) & [Naive Plugin](https://github.com/bolucat/SagerNet/releases?q=naive) |
+| NekoBoxForAndroid | Android | https/quic | Maintained | [Client](https://github.com/MatsuriDayo/NekoBoxForAndroid) & [Naive Plugin](https://github.com/bolucat/SagerNet/releases?q=naive) |
 | AndrProxy | Android | https/quic | Inactive | [Link](https://github.com/Jidoer/AndrProxy) |
-| Sing-box | Windows/MacOS/Linux/Android/iOS | https/quic | Maintained | [Nekoray](https://github.com/MatsuriDayo/nekoray) & [V2rayN](https://github.com/2dust/v2rayN) & [Android](https://sing-box.sagernet.org/installation/clients/sfa) & [iOS](https://sing-box.sagernet.org/installation/clients/sfi/) |
+| Sing-box | Windows/MacOS/Linux/Android/iOS | https/quic | Maintained | [Nekoray](https://github.com/MatsuriDayo/nekoray) & [V2rayN](https://github.com/2dust/v2rayN) & [Android](https://sing-box.sagernet.org/clients/android/) & [iOS](https://sing-box.sagernet.org/clients/apple/) |
 | Shadowrocket | iOS | https | Maintained | [Link](https://apps.apple.com/us/app/shadowrocket/id932747118) |
 
 ## v2rayN Users
